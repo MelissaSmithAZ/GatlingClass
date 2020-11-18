@@ -24,8 +24,6 @@ class CsvFeeder extends Simulation {
   val scn = scenario("Csv Feeder test")
       .exec(getSpecificVideoGame())
 
-
-
   setUp(
     scn.inject(atOnceUsers(1))
   ).protocols(httpConf)
